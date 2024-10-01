@@ -1,0 +1,26 @@
+footer {
+    background-color: $light-gray;
+    color: $text-color;
+    padding: 1rem 0;
+    margin-top:3rem;
+  
+    .container {
+      @include container;
+      @include flex-center;
+      justify-content: space-between;
+    }
+  
+    .social-links {
+      @include flex-center;
+  
+      a {
+        margin-left: 1rem;
+        color: $primary-color;
+        text-decoration: none;
+  
+        &:hover {
+          color: darken($primary-color, 10%);
+        }
+      }
+    }
+  }

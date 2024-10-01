@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: $text-color;
+  }
+  
+  .container {
+    @include container;
+  }
+  
+  main {
+    padding: 2rem 0;
+  }
+  
+  h1 {
+    color: $primary-color;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $secondary-color;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+    }
+  }
